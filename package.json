@@ -1,0 +1,17 @@
+{
+  "name": "ahnajakmc-store-supabase",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:backend": "npm --workspace apps/backend run dev",
+    "dev:web": "npm --workspace apps/web run dev",
+    "dev:bot": "npm --workspace apps/bot run dev",
+    "build": "npm --workspace packages/shared run build && npm --workspace apps/web run build && npm --workspace apps/backend run build && npm --workspace apps/bot run build",
+    "build:vercel": "npm --workspace apps/web run build",
+    "start:backend": "npm --workspace apps/backend start",
+    "start:bot": "npm --workspace apps/bot start"
+  },
+  "engines": { "node": ">=20" }
+}

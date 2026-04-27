@@ -1,0 +1,1 @@
+{"name":"@ahnajakmc/bot","version":"1.0.0","type":"module","main":"dist/index.js","scripts":{"dev":"tsx src/index.ts","build":"tsc -p tsconfig.json","start":"node dist/index.js"},"dependencies":{"@ahnajakmc/shared":"*","discord.js":"^14.17.3","dotenv":"^16.4.7","node-fetch":"^3.3.2"},"devDependencies":{"tsx":"^4.19.2","typescript":"^5.7.2"}}
